@@ -91,16 +91,9 @@ Normalizes global score columns by residue count (per GH3) and SR-specific colum
 
 | GH3 | Residue Count |
 |-----|--------------|
-| 39  | 1001 |
-| 41  | 801  |
-| 47  | 994  |
-| 76  | 857  |
-| B3  | 740  |
-| B6  | 817  |
-| B9  | 945  |
-| I1  | 829  |
-| I2  | 823  |
-| W0  | 1080 |
+| GH1  | 1000 |
+| GH2  | 900  |
+| GH3  | 800  |
 
 ### Step 6 — Recheck Post-Normalization
 Same correlation/zero check as step 4, but run on the normalized data.
@@ -116,11 +109,9 @@ Adds an `active` column (1 = active, 0 = inactive) based on known experimental a
 
 | Oligo | Active GH3s |
 |-------|-------------|
-| CL3   | B9, B3, 76, 41 |
-| CR3   | B9, B3, I2, 41, 76, 47 |
-| XY3   | B9 |
-| H2B   | B9 |
-| H3B   | B9, B3 |
+| oligo1   | GH1, GH2 |
+| oligo2   | GH2, GH3 |
+
 
 All other GH3–oligo pairs are labeled inactive.
 
