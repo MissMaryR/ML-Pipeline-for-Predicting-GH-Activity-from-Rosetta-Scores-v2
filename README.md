@@ -27,8 +27,8 @@ The script expects the following directory layout where it is run:
 ```
 working_directory/
 ├── 1_clean_data.py
-├── GH3_name_1/          ← oligo column
-│   ├── oligo_name_1/        ← GH3 column
+├── GH3_name_1/          ← GH3 column
+│   ├── oligo_name_1/        ← oligo column
 │   │   └── Top_PDBs/
 │   │       └── glycan_top_fullscores.csv
 │   └── oligo_name_2/
