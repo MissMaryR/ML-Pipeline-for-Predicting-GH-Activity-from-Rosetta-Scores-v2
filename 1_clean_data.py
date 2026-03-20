@@ -191,9 +191,7 @@ def step5_normalize():
     df.columns = df.columns.str.strip()
 
     residue_counts = {
-        '39': 1001, '41': 801, '47': 994, '76': 857,
-        'B3': 740, 'B6': 817, 'B9': 945,
-        'I1': 829, 'I2': 823, 'W0': 1080
+        'GH1': 1000, 'GH2': 900, 'GH3': 800
     }
     df['residue_count'] = df['GH3'].map(residue_counts)
 
@@ -354,11 +352,8 @@ def step9_label_active():
     df['oligo'] = df['oligo'].astype(str).str.strip()
 
     active_pairs = {
-        'CL3': {'B9', 'B3', '76', '41'},
-        'CR3': {'B9', 'B3', 'I2', '41', '76', '47'},
-        'XY3': {'B9'},
-        'H2B': {'B9'},
-        'H3B': {'B9', 'B3'},
+        'oligo1': {'GH1', 'GH2'},
+        'oligo2': {'GH2', 'GH3'},
     }
 
     def is_active(row):
