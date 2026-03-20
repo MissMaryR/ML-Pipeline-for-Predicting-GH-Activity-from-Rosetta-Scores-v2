@@ -27,14 +27,14 @@ The script expects the following directory layout where it is run:
 ```
 working_directory/
 ├── 1_clean_data.py
-├── oligo1/                ← oligo column
-│   ├── GH1/               ← GH column
+├── GH1/                ← GH column
+│   ├── oligo1/               ← oligo column
 │   │   └── Top_PDBs/
 │   │       └── glycan_top_fullscores.csv
-│   └── GH2/
+│   └── oligo2/
 │       └── Top_PDBs/
 │           └── glycan_top_fullscores.csv
-├── oligo2/
+├── GH2/
 │   └── ...
 ```
 
