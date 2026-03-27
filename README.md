@@ -167,3 +167,6 @@ active_pairs = {
 - Intermediate files are preserved at each step so you can inspect the data or re-run from any point in the pipeline.
 - Steps 4 and 6 are report-only steps — they print correlation information but do not save any files.
 - To add new columns to drop, edit the `columns_to_drop` list in `step3_drop_correlated()` or `step7_drop_and_recheck()`.
+
+
+## Next go to README_models to train 4 different machine learning models to determine which is best for your data
